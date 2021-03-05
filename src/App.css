@@ -1,0 +1,99 @@
+@font-face {
+  font-family: retroWave;
+  src: url('./assets/fonts/commando.ttf');
+}
+
+.App {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--color-white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('./assets/images/synthwave-background.jpg');
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+.App__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 40px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+
+.title__styles {
+  font-size: 60px;
+  font-family: retroWave;
+  text-shadow: 0px 8px 30px rgba(249,42,126,0.2);
+  color: rgb(249,42,126);
+}
+
+.App__left, .App__right {
+  width: 25%;
+}
+
+.button {
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #FB5792;
+  background-color: transparent;
+  border: 2px solid #FB5792;
+  border-radius: 8px;
+  transition: 300ms ease-in-out;
+  transition-property: background-color, color;
+  box-shadow: rgba(249,42,126, 0.35) 0px 5px 15px;
+  outline: none;
+}
+
+.top-left-radius {
+  border-top-left-radius: 16px;
+}
+
+.button:hover {
+  background-color: #FB5792;
+  color: #17092D;
+}
+
+.timer__buttons {
+  margin: 0 40px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.option__buttons {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.flex-center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.timer__options{
+  margin-top: 100px;
+}
+
+pre {
+  margin: 0;
+  font-family: retroWave;
+  background: rgb(249,42,126);
+background: linear-gradient(0deg, rgba(249,42,126,1) 0%, rgba(254,254,101,1) 100%);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 8px 30px rgba(249,42,126,0.2);
+}
